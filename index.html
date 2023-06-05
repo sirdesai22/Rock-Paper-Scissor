@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scoreContainer">
+        <p>😎- <span id="scoreMan">0</span></p>
+        <p>🤖- <span id="scoreRobo">0</span></p>
+    </div>
+    <div class="optionContainer">
+        <div class="option" id="rock" onclick="selected('Rock')">🪨</div>
+        <div class="option" id="paper" onclick="selected('Paper')">📃</div>
+        <div class="option" id="scissor"onclick="selected('Scissor')">✂️</div>
+    </div>
+    <p id="chossen">Choose your option</p>
+    <p id="status">Let's Play!</p>
+    <div class="buttContainer">
+        <button id="resetButt" onclick="resetButt()">Reset</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
